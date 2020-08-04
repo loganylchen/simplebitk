@@ -1,10 +1,11 @@
 {
-  "Notebook": {
-    "Export to modules": "/export",
-    "Convert to html": "/export2html",
-    "Show doc": "/showdoc",
-    "Test functions": "/test",
-    "Core functions": "/core",
-    "Command line functions": "/cli"
+  "bitk": {
+    "Overview": "/",
+    "utils.dedimensions": "/utils_rd",
+    "pipelines": "/pipelines",
+    "run_all": "/mains",
+    "plots": "/utils_plots",
+    "clusters": "/utils_clusters",
+    "defaults": "/default"
   }
 }

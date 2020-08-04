@@ -7,24 +7,27 @@ entries:
 - folders:
   - folderitems:
     - output: web,pdf
-      title: Export to modules
-      url: /export.html
+      title: Overview
+      url: /
     - output: web,pdf
-      title: Convert to html
-      url: /export2html.html
+      title: utils.dedimensions
+      url: /utils_rd
     - output: web,pdf
-      title: Show doc
-      url: /showdoc.html
+      title: pipelines
+      url: /pipelines
     - output: web,pdf
-      title: Test functions
-      url: /test.html
+      title: run_all
+      url: /mains
     - output: web,pdf
-      title: Core functions
-      url: /core.html
+      title: plots
+      url: /utils_plots
     - output: web,pdf
-      title: Command line functions
-      url: /cli.html
+      title: clusters
+      url: /utils_clusters
+    - output: web,pdf
+      title: defaults
+      url: /default
     output: web
-    title: Notebook
+    title: bitk
   output: web
   title: Sidebar
