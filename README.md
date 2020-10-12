@@ -16,7 +16,7 @@ usage: dedim.py [-h] [--sep SEP] [--dedimensions-method DEDIMENSIONS_METHOD]
                 [--assess-method ASSESS_METHOD] [--dimensions DIMENSIONS]
                 [--cluster-number CLUSTER_NUMBER] [-r] [--no-row-feature]
                 [--annotation ANNOTATION] [--size SIZE] [--style STYLE]
-                [-t TITLE] [--version]
+                [-t TITLE] [-f FIG] [--version]
                 matrix prefix
 
 positional arguments:
@@ -55,6 +55,8 @@ optional arguments:
   -t TITLE, --title TITLE
                         figure title
                         (default: None)
+  -f FIG, --fig FIG     png/pdf
+                        (default: png)
   --version             show program's version number and exit
 ```
 

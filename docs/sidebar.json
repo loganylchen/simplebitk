@@ -6,6 +6,7 @@
     "run_all": "/mains",
     "plots": "/utils_plots",
     "clusters": "/utils_clusters",
-    "defaults": "/default"
+    "defaults": "/default",
+    "preprocess": "/preprocess"
   }
 }

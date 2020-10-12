@@ -27,6 +27,9 @@ entries:
     - output: web,pdf
       title: defaults
       url: /default
+    - output: web,pdf
+      title: preprocess
+      url: /preprocess
     output: web
     title: bitk
   output: web

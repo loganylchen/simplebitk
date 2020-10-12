@@ -6,20 +6,23 @@ index = {"reduce_dimensional": "00_utils_rd.ipynb",
          "de_dim_methods": "00_utils_rd.ipynb",
          "de_dimensions": "01_pipelines.ipynb",
          "run_de_dim": "02_mains.ipynb",
+         "run_fc_rename": "02_mains.ipynb",
          "scatter_plots_for_reduce_dimensional": "03_utils_plots.ipynb",
          "clusters_annotation": "04_utils_clusters.ipynb",
          "ass_methods": "04_utils_clusters.ipynb",
          "cluster_methods": "04_utils_clusters.ipynb",
          "find_peak_valley": "04_utils_clusters.ipynb",
          "find_best_cluster_number": "04_utils_clusters.ipynb",
-         "cluster_params": "05_default.ipynb"}
+         "cluster_params": "05_default.ipynb",
+         "featurecount_rename": "06_preprocess.ipynb"}
 
 modules = ["utils/dedimensions.py",
            "pipelines.py",
            "run_all.py",
            "utils/plots.py",
            "utils/clusters.py",
-           "defaults.py"]
+           "defaults.py",
+           "preprocess.py"]
 
 doc_url = "https://btrspg.github.io/bitk/"
 
