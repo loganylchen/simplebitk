@@ -30,6 +30,9 @@ entries:
     - output: web,pdf
       title: preprocess
       url: /preprocess
+    - output: web,pdf
+      title: degfc
+      url: /merge_degfc
     output: web
     title: bitk
   output: web
