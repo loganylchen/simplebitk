@@ -21,7 +21,7 @@ def featurecount_rename(featurecounts,clinical,prefix,*,sample_title='sample',ba
     '''
 
     fc = pd.read_csv(featurecounts,sep='\t',comment='#')
-    cli = pd.read_csv(clinical,sep='\t',comment='#')
+    cli = pd.read_csv(clinical,comment='#')
     fc.rename(columns=cli.set_index(bam_title)[sample_title],
                  inplace=True)
     fc.to_csv(f'{prefix}_featurecounts.txt',sep='\t',index=False)
