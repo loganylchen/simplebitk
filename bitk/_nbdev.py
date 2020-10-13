@@ -14,6 +14,8 @@ index = {"reduce_dimensional": "00_utils_rd.ipynb",
          "find_peak_valley": "04_utils_clusters.ipynb",
          "find_best_cluster_number": "04_utils_clusters.ipynb",
          "cluster_params": "05_default.ipynb",
+         "fc_count2tpm": "06_preprocess.ipynb",
+         "fc_count2fpkm": "06_preprocess.ipynb",
          "featurecount_rename": "06_preprocess.ipynb"}
 
 modules = ["utils/dedimensions.py",
