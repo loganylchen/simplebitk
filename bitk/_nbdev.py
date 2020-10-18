@@ -18,7 +18,11 @@ index = {"reduce_dimensional": "00_utils_rd.ipynb",
          "fc_count2tpm": "06_preprocess.ipynb",
          "fc_count2fpkm": "06_preprocess.ipynb",
          "featurecount_rename": "06_preprocess.ipynb",
-         "merge_fc_deseq2": "07_merge_degfc.ipynb"}
+         "merge_fc_deseq2": "07_merge_degfc.ipynb",
+         "polya_in_nanopolish": "08_polya_sites.ipynb",
+         "polya_length_in_gene": "08_polya_sites.ipynb",
+         "polya_length_correlation": "08_polya_sites.ipynb",
+         "parallel_run": "09_utils_multirun.ipynb"}
 
 modules = ["utils/dedimensions.py",
            "pipelines.py",
@@ -27,7 +31,9 @@ modules = ["utils/dedimensions.py",
            "utils/clusters.py",
            "defaults.py",
            "preprocess.py",
-           "merge/degfc.py"]
+           "merge/degfc.py",
+           "nanopore.py",
+           "utils/multirun.py"]
 
 doc_url = "https://btrspg.github.io/bitk/"
 

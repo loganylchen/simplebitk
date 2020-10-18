@@ -8,6 +8,8 @@
     "clusters": "/utils_clusters",
     "defaults": "/default",
     "preprocess": "/preprocess",
-    "degfc": "/merge_degfc"
+    "degfc": "/merge_degfc",
+    "nanopore": "/polya_sites",
+    "multirun": "/utils_multirun"
   }
 }
