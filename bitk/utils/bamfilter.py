@@ -20,8 +20,12 @@ def filter_bam_by_name(read_name_list,bamfile,output,*,included=True):
     '''
     with open(read_name_list,'r') as f:
         name_list = f.read()
+    n=0
     with pysam.AlignmentFile(bamfile,'rb') as inbam, pysam.AlignmentFile(output,'wb',template=inbam) as outbam:
         for read in inbam.fetch():
+            n+=1
+            if n% 10000 ==0:
+                print(f'Working on the {n} reads')
             if included:
                 if read.query_name in name_list:
                     outbam.write(read)
