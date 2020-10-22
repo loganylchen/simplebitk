@@ -10,6 +10,7 @@
     "preprocess": "/preprocess",
     "degfc": "/merge_degfc",
     "nanopore": "/polya_sites",
-    "multirun": "/utils_multirun"
+    "multirun": "/utils_multirun",
+    "bamfilter": "/utils_bamfilter"
   }
 }
