@@ -23,7 +23,7 @@ index = {"reduce_dimensional": "00_utils_rd.ipynb",
          "polya_length_correlation": "08_polya_sites.ipynb",
          "parallel_run": "09_utils_multirun.ipynb",
          "filter_bam_by_name": "10_utils_bamfilter.ipynb",
-         "compare_plots": "plots.ipynb"}
+         "compare_plots": "11_plots.ipynb"}
 
 modules = ["utils/dedimensions.py",
            "pipelines.py",
