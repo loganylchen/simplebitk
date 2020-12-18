@@ -22,7 +22,7 @@ def compare_plots(df,column1,column2,name1,name2,value_name,output,hue):
     :param hue:
     :return:
     '''
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(9, 4.5), tight_layout=True)
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(18, 9), tight_layout=True)
     jp = sns.scatterplot(x=column1, y=column2, data=df,ax=ax1,hue=hue)
     rm_na_df = df[[column1,column2]].dropna()
     cor,p = stats.pearsonr(rm_na_df[column1],rm_na_df[column2])
