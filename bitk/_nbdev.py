@@ -5,6 +5,7 @@ __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 index = {"reduce_dimensional": "00_utils_rd.ipynb",
          "de_dim_methods": "00_utils_rd.ipynb",
          "de_dimensions": "01_pipelines.ipynb",
+         "scatter_plot": "01_pipelines.ipynb",
          "run_main": "02_mains.ipynb",
          "scatter_plots_for_reduce_dimensional": "03_utils_plots.ipynb",
          "clusters_annotation": "04_utils_clusters.ipynb",
@@ -21,7 +22,8 @@ index = {"reduce_dimensional": "00_utils_rd.ipynb",
          "polya_length_in_gene": "08_polya_sites.ipynb",
          "polya_length_correlation": "08_polya_sites.ipynb",
          "parallel_run": "09_utils_multirun.ipynb",
-         "filter_bam_by_name": "10_utils_bamfilter.ipynb"}
+         "filter_bam_by_name": "10_utils_bamfilter.ipynb",
+         "compare_plots": "plots.ipynb"}
 
 modules = ["utils/dedimensions.py",
            "pipelines.py",
@@ -33,7 +35,8 @@ modules = ["utils/dedimensions.py",
            "merge/degfc.py",
            "nanopore.py",
            "utils/multirun.py",
-           "utils/bamfilter.py"]
+           "utils/bamfilter.py",
+           "plots.py"]
 
 doc_url = "https://btrspg.github.io/bitk/"
 

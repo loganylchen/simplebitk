@@ -5,7 +5,7 @@ __all__ = ['run_main']
 # Cell
 
 import defopt
-from .pipelines import de_dimensions
+from .pipelines import de_dimensions,scatter_plot
 from .preprocess import featurecount_rename
 from .merge.degfc import merge_fc_deseq2
 from .nanopore import polya_length_correlation
@@ -15,5 +15,10 @@ from .utils.bamfilter import filter_bam_by_name
 
 
 def run_main():
-    defopt.run([de_dimensions,featurecount_rename,merge_fc_deseq2,polya_length_correlation,filter_bam_by_name])
+    defopt.run([de_dimensions,
+                featurecount_rename,
+                merge_fc_deseq2,
+                polya_length_correlation,
+                scatter_plot,
+                filter_bam_by_name])
 
