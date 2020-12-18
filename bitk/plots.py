@@ -24,7 +24,8 @@ def compare_plots(df,column1,column2,name1,name2,value_name,output,hue):
     '''
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(9, 4.5), tight_layout=True)
     jp = sns.scatterplot(x=column1, y=column2, data=df,ax=ax1,hue=hue)
-    cor,p = stats.pearsonr(df[column1],df[column2])
+    rm_na_df = df[[column1,column2]].dropna()
+    cor,p = stats.pearsonr(rm_na_df[column1],rm_na_df[column2])
     jp.annotate(text='COR=%.2f,p=%.2f' % (cor,p) ,xy=(0,max(df[column2])))
     jp.set_xlabel(name1)
     jp.set_ylabel(name2)
