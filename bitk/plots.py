@@ -9,7 +9,7 @@ import seaborn as sns
 
 # Cell
 
-def compare_plots(df,column1,column2,name1,name2,value_name,output):
+def compare_plots(df,column1,column2,name1,name2,value_name,output,hue):
     '''
 
     :param df:
@@ -18,11 +18,11 @@ def compare_plots(df,column1,column2,name1,name2,value_name,output):
     :param name1:
     :param name2:
     :param output:
+    :param hue:
     :return:
     '''
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(9, 4.5), tight_layout=True)
 
-    jp = sns.scatterplot(x=column1, y=column2, data=df,ax=ax1,)
     jp.set_xlabel(name1)
     jp.set_ylabel(name2)
     jp.set_title(f'Scatter plots of {value_name} in {name1} and {name2}')

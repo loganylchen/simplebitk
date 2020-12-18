@@ -71,7 +71,7 @@ def de_dimensions(matrix,prefix,*,sep='\t',dedimensions_method='PCA',cluster_met
 
 # Cell
 
-def scatter_plot(table,output,* ,column1,column2,name1=None,name2=None,value_name='value',sep='\t'):
+def scatter_plot(table,output,* ,column1,column2,name1=None,name2=None,value_name='value',sep='\t',hue=None):
     '''
     scatter plot for two columns in the table
 
@@ -83,6 +83,7 @@ def scatter_plot(table,output,* ,column1,column2,name1=None,name2=None,value_nam
     :param str name2: name in the figure for column2
     :param str value_name: the value name, for example: expression, TPM?
     :param str sep:
+    :param str hue:
     :return:
     '''
     df = pd.read_csv(table,sep=sep,index_col=0)
@@ -90,4 +91,4 @@ def scatter_plot(table,output,* ,column1,column2,name1=None,name2=None,value_nam
         name1=column1
     if None is name2:
         name2=column2
-    compare_plots(df,column1,column2,name1,name2,value_name,output)
+    compare_plots(df,column1,column2,name1,name2,value_name,output,hue)
