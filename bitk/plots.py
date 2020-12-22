@@ -10,7 +10,8 @@ import scipy.stats as stats
 
 # Cell
 
-def compare_plots(df,column1,column2,name1,name2,value_name,output,hue):
+def compare_plots(df,column1,column2,name1,name2,value_name,
+                  output,hue,logscale=False,xlim=None,ylim=None):
     '''
 
     :param df:
@@ -20,6 +21,7 @@ def compare_plots(df,column1,column2,name1,name2,value_name,output,hue):
     :param name2:
     :param output:
     :param hue:
+    :param logscale:
     :return:
     '''
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(18, 9), tight_layout=True)
@@ -31,13 +33,21 @@ def compare_plots(df,column1,column2,name1,name2,value_name,output,hue):
     jp.set_xlabel(name1)
     jp.set_ylabel(name2)
     jp.set_title(f'Scatter plots of {value_name} in {name1} and {name2}')
-    jp.set_xlim(0,lim+1)
-    jp.set_ylim(0,lim+1)
+    if None is xlim:
+        jp.set_xlim(0,lim+1)
+    else:
+        jp.set_xlim(*xlim)
+    if None is ylim:
+        jp.set_xlim(0,lim+1)
+    else:
+        jp.set_ylim(*ylim)
     tmp=df.rename(columns={column1:name1,column2:name2}).melt(id_vars=None,
                                                               value_vars=[name1,name2],
                                                               var_name='class',
                                         value_name=value_name)
     vp =sns.violinplot(x='class', y=value_name,data=tmp,ax=ax2)
     vp.set_title(f'Violin plot of {value_name} in {name1} and {name2}')
-
+    if logscale:
+        jp.set(xscale='log',yscale='log')
+        vp.set(yscale='log')
     fig.savefig(output,dpi=1200)
