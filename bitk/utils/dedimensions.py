@@ -16,10 +16,11 @@ from umap import UMAP
 def reduce_dimensional(df,method=PCA,n_components=2):
     if method not in [PCA,MDS,TSNE,UMAP,PHATE]:
         raise ValueError('method should be in [PCA,MDS,TSNE,UMAP,PHATE], not '+str(method))
-
-    reducer = method(n_components=n_components)
-    results=reducer.fit_transform(df)
     prefix=getattr(method,'__name__')
+
+    reducer = method(n_components=n_components,random_state=422)
+    results=reducer.fit_transform(df)
+
     if isinstance(n_components,float):
         n_components = method.n_compnents_
     reduced_df = pd.DataFrame({prefix+str(i+1):results[:,i] for i in range(n_components)})
