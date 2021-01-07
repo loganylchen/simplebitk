@@ -23,7 +23,10 @@ index = {"reduce_dimensional": "00_utils_rd.ipynb",
          "polya_length_correlation": "08_polya_sites.ipynb",
          "parallel_run": "09_utils_multirun.ipynb",
          "filter_bam_by_name": "10_utils_bamfilter.ipynb",
-         "compare_plots": "11_plots.ipynb"}
+         "compare_plots": "11_plots.ipynb",
+         "retreat_upstreams_downstreams_from_read": "12_reads_head.ipynb",
+         "retreat_seq_from_fasta": "12_reads_head.ipynb",
+         "extract_sequences": "12_reads_head.ipynb"}
 
 modules = ["utils/dedimensions.py",
            "pipelines.py",
@@ -36,7 +39,8 @@ modules = ["utils/dedimensions.py",
            "nanopore.py",
            "utils/multirun.py",
            "utils/bamfilter.py",
-           "plots.py"]
+           "plots.py",
+           "bam/reads.py"]
 
 doc_url = "https://btrspg.github.io/bitk/"
 

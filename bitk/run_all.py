@@ -10,6 +10,7 @@ from .preprocess import featurecount_rename
 from .merge.degfc import merge_fc_deseq2
 from .nanopore import polya_length_correlation
 from .utils.bamfilter import filter_bam_by_name
+from .bam.reads import extract_sequences
 
 # Cell
 
@@ -20,5 +21,7 @@ def run_main():
                 merge_fc_deseq2,
                 polya_length_correlation,
                 scatter_plot,
-                filter_bam_by_name])
+                filter_bam_by_name,
+                extract_sequences
+                ])
 
