@@ -1,5 +1,5 @@
 {
-  "bitk": {
+  "simplebitk": {
     "Overview": "/",
     "utils.dedimensions": "utils_rd.html",
     "pipelines": "pipelines.html",
@@ -12,6 +12,7 @@
     "nanopore": "polya_sites.html",
     "multirun": "utils_multirun.html",
     "bamfilter": "utils_bamfilter.html",
-    "Title": "plots.html"
+    "Title": "plots.html",
+    "reads": "reads_head.html"
   }
 }

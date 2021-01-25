@@ -5,12 +5,12 @@ __all__ = ['run_main']
 # Cell
 
 import defopt
-from bitk.pipelines import de_dimensions,scatter_plot
-from bitk.preprocess import featurecount_rename
-from bitk.merge.degfc import merge_fc_deseq2
-from bitk.nanopore import polya_length_correlation
-from bitk.utils.bamfilter import filter_bam_by_name
-from bitk.bam.reads import extract_sequences
+from .pipelines import de_dimensions,scatter_plot
+from .preprocess import featurecount_rename
+from .merge.degfc import merge_fc_deseq2
+from .nanopore import polya_length_correlation
+from .utils.bamfilter import filter_bam_by_name
+from .bam.reads import extract_sequences
 
 # Cell
 

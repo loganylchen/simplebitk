@@ -8,7 +8,7 @@ import pandas as pd
 import pysam
 import scipy.stats as stats
 
-from bitk.utils.multirun import parallel_run
+from .utils.multirun import parallel_run
 
 # Cell
 

@@ -45,7 +45,10 @@ entries:
     - output: web,pdf
       title: Title
       url: plots.html
+    - output: web,pdf
+      title: reads
+      url: reads_head.html
     output: web
-    title: bitk
+    title: simplebitk
   output: web
   title: Sidebar

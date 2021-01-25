@@ -4,12 +4,12 @@ __all__ = ['de_dimensions', 'scatter_plot']
 
 # Cell
 
-from bitk.utils import dedimensions
-from bitk.utils import clusters
-from bitk.utils import plots
-from bitk import defaults
+from .utils import dedimensions
+from .utils import clusters
+from .utils import plots
+from simplebitk import defaults
 import pandas as pd
-from bitk.plots import compare_plots
+from .plots import compare_plots
 
 # Cell
 
