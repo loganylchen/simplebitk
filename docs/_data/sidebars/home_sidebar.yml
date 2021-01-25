@@ -11,35 +11,44 @@ entries:
       url: /
     - output: web,pdf
       title: utils.dedimensions
-      url: /utils_rd
+      url: utils_rd.html
     - output: web,pdf
       title: pipelines
-      url: /pipelines
+      url: pipelines.html
     - output: web,pdf
       title: run_all
-      url: /mains
+      url: mains.html
     - output: web,pdf
       title: plots
-      url: /utils_plots
+      url: utils_plots.html
     - output: web,pdf
       title: clusters
-      url: /utils_clusters
+      url: utils_clusters.html
     - output: web,pdf
       title: defaults
-      url: /default
+      url: default.html
     - output: web,pdf
       title: preprocess
-      url: /preprocess
+      url: preprocess.html
     - output: web,pdf
       title: degfc
-      url: /merge_degfc
+      url: merge_degfc.html
     - output: web,pdf
       title: nanopore
-      url: /polya_sites
+      url: polya_sites.html
     - output: web,pdf
       title: multirun
-      url: /utils_multirun
+      url: utils_multirun.html
+    - output: web,pdf
+      title: bamfilter
+      url: utils_bamfilter.html
+    - output: web,pdf
+      title: Title
+      url: plots.html
+    - output: web,pdf
+      title: reads
+      url: reads_head.html
     output: web
-    title: bitk
+    title: simplebitk
   output: web
   title: Sidebar
